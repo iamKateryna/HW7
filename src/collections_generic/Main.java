@@ -45,5 +45,26 @@ public class Main {
 
         Collections.sort(myCollection);
         System.out.println(myCollection);
+        
+                /*               practical task 2                    */
+
+        HashMap<Integer, String> employeeMap = new HashMap<Integer, String>();
+
+        employeeMap.put(21, "Alice");
+        employeeMap.put(23, "Brad");
+        employeeMap.put(45, "John");
+        employeeMap.put(34, "Boris");
+        employeeMap.put(52, "Ien");
+        employeeMap.put(27, "Mark");
+        employeeMap.put(18, "Alice");
+        for (Map.Entry<Integer, String> entry : employeeMap.entrySet())
+            System.out.println(entry.getKey() + " - " + entry.getValue());
+       /* System.out.println("Enter ID");
+        int ID = scanner.nextInt();
+        if (!(employeeMap.containsKey(ID))){System.out.println("no");}*/
+        System.out.println("Enter name");
+        String name = scanner.nextLine();
+        if (!(employeeMap.containsValue(name))){System.out.println("no");}
+
     }
 }
